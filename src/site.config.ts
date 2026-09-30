@@ -1,9 +1,9 @@
 // Edit this file to re-label the entire site. Header, Footer, the homepage
 // and SEO defaults all read from here instead of hardcoding copy.
 export const SITE = {
-  name: "John Doe",
+  name: "Portfolio of souk4711",
   description:
-    "Portfolio of John Doe — product design and frontend engineering, with an emphasis on speed, clarity, and the details most people skip.",
+    "Portfolio of souk4711 — an old-school software developer in the AI era, with an emphasis on speed, clarity, and the details.",
   social: [
     { label: "GitHub", href: "https://github.com/your-username" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/your-username" },

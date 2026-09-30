@@ -18,9 +18,11 @@ interface Props {
 const { entry } = Astro.props;
 const { title, summary, url, repo } = entry.data;
 const { Content } = await render(entry);
+
+const pageTitle = `${title} - Work`;
 ---
 
-<Layout title={title} description={summary}>
+<Layout title={pageTitle} description={summary}>
   <article class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
     <a href="/work" class="text-ink-soft hover:text-signal font-mono text-xs transition-colors">
       ← All work
