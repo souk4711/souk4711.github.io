@@ -4,11 +4,7 @@ export const SITE = {
   name: "Portfolio of souk4711",
   description:
     "Portfolio of souk4711 — an old-school software developer in the AI era, with an emphasis on speed, clarity, and the details.",
-  social: [
-    { label: "GitHub", href: "https://github.com/your-username" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/your-username" },
-    { label: "X", href: "https://x.com/your-username" },
-  ],
+  social: [{ label: "GitHub", href: "https://github.com/souk4711" }],
   locale: "en",
 } as const;
 
