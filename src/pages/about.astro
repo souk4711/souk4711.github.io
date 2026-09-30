@@ -1,12 +1,12 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro';
+import Layout from '@/layouts/Layout.astro';
 import Button from '@/components/Button.astro';
 import { SITE } from '@/site.config';
 
 const tools = ['TypeScript', 'Astro', 'React', 'Figma', 'Tailwind CSS', 'Node.js'];
 ---
 
-<BaseLayout title="About" description={`A bit about ${SITE.name} and how they work.`}>
+<Layout title="About" description={`A bit about ${SITE.name} and how they work.`}>
   <section class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
     <p class="text-ink-soft mb-6 font-mono text-xs tracking-[0.2em] uppercase">About</p>
 
@@ -46,4 +46,4 @@ const tools = ['TypeScript', 'Astro', 'React', 'Figma', 'Tailwind CSS', 'Node.js
 
     <Button href={`mailto:${SITE.email}`} class="mt-10">Get in touch</Button>
   </section>
-</BaseLayout>
+</Layout>

@@ -1,9 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
-import BaseLayout from '@/layouts/BaseLayout.astro';
+import Layout from '@/layouts/Layout.astro';
 import Button from '@/components/Button.astro';
-import WorkRow from '@/components/WorkRow.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
+import WorkRow from '@/components/WorkRow.astro';
 import { SITE } from '@/site.config';
 
 const allWork = await getCollection('work', ({ data }) => !data.draft);
@@ -13,7 +13,7 @@ const rest = sorted.filter((entry) => !entry.data.featured);
 const selected = [...featured, ...rest].slice(0, 5);
 ---
 
-<BaseLayout title={SITE.name}>
+<Layout title={SITE.name}>
   <section class="mx-auto max-w-3xl px-6 pt-16 pb-20 sm:pt-24">
     <p class="text-ink-soft mb-6 inline-flex items-center gap-2 font-mono text-xs">
       <span class="bg-signal h-1.5 w-1.5 rounded-full" aria-hidden="true"></span>
@@ -75,4 +75,4 @@ const selected = [...featured, ...rest].slice(0, 5);
       {SITE.email}
     </a>
   </section>
-</BaseLayout>
+</Layout>

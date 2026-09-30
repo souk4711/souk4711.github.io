@@ -29,11 +29,11 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── robots.txt
 ├── src/
 │   ├── assets/               # static images and assets
-│   ├── components/           # BaseHead, Button, Footer, Header, SectionHeading, ThemeToggle, WorkRow
+│   ├── components/           # component Button, Footer, Header, etc.
 │   ├── content/
 │   │   └── work/*.md         # one file per project
 │   ├── layouts/
-│   │   └── BaseLayout.astro  # <head>, SEO, fonts, theme script
+│   │   └── Layout.astro      # <head>, SEO, fonts, theme script
 │   ├── pages/
 │   │   ├── index.astro
 │   │   ├── about.astro
@@ -42,8 +42,8 @@ Inside of your Astro project, you'll see the following folders and files:
 │   ├── styles/
 │   │   └── global.css        # design tokens + Tailwind import
 │   ├── utils/
-│   │   └── formatDate.ts     # date formatting helpers
-│   ├── content.config.ts     # Zod schema for the "work" collection
+│   │   └── format.ts         # formatting helpers
+│   ├── content.config.ts     # zod schema for the "work" collection
 │   └── site.config.ts        # name, bio, email, social links
 ├── astro.config.mjs
 └── tsconfig.json

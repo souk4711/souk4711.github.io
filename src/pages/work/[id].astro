@@ -1,8 +1,8 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
-import BaseLayout from '@/layouts/BaseLayout.astro';
+import Layout from '@/layouts/Layout.astro';
 import Button from '@/components/Button.astro';
-import { formatDate } from '@/utils/formatDate';
+import { formatDate } from '@/utils/format';
 
 export async function getStaticPaths() {
   const entries = await getCollection('work', ({ data }) => !data.draft);
@@ -23,7 +23,7 @@ const { Content } = await render(entry);
 const formattedDate = formatDate(date);
 ---
 
-<BaseLayout title={title} description={summary}>
+<Layout title={title} description={summary}>
   <article class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
     <a href="/work" class="text-ink-soft hover:text-signal font-mono text-xs transition-colors">
       ← All work
@@ -69,4 +69,4 @@ const formattedDate = formatDate(date);
       }
     </div>
   </article>
-</BaseLayout>
+</Layout>
