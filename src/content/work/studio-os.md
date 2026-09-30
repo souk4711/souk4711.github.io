@@ -2,7 +2,6 @@
 title: Studio OS
 summary: An internal tools platform that replaced six disconnected spreadsheets with one system the whole team trusted.
 date: 2026-04-01
-tags: [Product Design, Astro, TypeScript, Design Systems]
 url: https://example.com
 repo: https://github.com/your-username/studio-os
 featured: true
