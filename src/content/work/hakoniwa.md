@@ -4,7 +4,6 @@ summary: Process isolation for Linux using namespaces, resource limits, cgroups,
 date: 2025-06-20
 repo: https://github.com/souk4711/hakoniwa
 featured: true
-draft: false
 ---
 
 Process isolation for Linux using namespaces, resource limits, cgroups, landlock and seccomp.

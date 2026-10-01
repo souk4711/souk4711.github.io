@@ -2,9 +2,12 @@
 import { Image } from 'astro:assets';
 import avatar from '@/assets/images/avatar.png';
 import ThemeToggle from '@/components/ThemeToggle.astro';
-import { NAV_LINKS } from '@/site.config';
 
 const currentPath = Astro.url.pathname;
+const navLinks = [
+  { label: "Work", href: "/work" },
+  { label: "About", href: "/about" },
+];
 ---
 
 <header class="border-line bg-paper/90 sticky top-0 z-40 border-b backdrop-blur">
@@ -15,7 +18,7 @@ const currentPath = Astro.url.pathname;
 
     <nav class="flex items-center gap-5" aria-label="Primary">
       {
-        NAV_LINKS.map((link) => {
+        navLinks.map((link) => {
           const isActive = currentPath === link.href || currentPath.startsWith(`${link.href}/`);
           return (
             <a

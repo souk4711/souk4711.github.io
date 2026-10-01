@@ -41,8 +41,6 @@ Inside of your Astro project, you'll see the following folders and files:
 │   │   └── 404.astro
 │   ├── styles/
 │   │   └── global.css        # design tokens + Tailwind import
-│   ├── utils/
-│   │   └── format.ts         # formatting helpers
 │   ├── content.config.ts     # zod schema for the "work" collection
 │   └── site.config.ts        # name, bio, email, social links
 ├── astro.config.mjs
@@ -70,9 +68,6 @@ enforced by the schema in `src/content.config.ts`:
 ---
 title: Project Name
 summary: One sentence, shown in the list view.
-role: Your role on the project
-date: 2026-01-15
-tags: [Astro, TypeScript]
 url: https://example.com # optional
 repo: https://github.com/... # optional
 featured: true # optional, shows it first on the homepage

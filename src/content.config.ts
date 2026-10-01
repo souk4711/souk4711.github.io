@@ -11,12 +11,9 @@ const work = defineCollection({
     z.object({
       title: z.string(),
       summary: z.string().max(160),
-      date: z.coerce.date(),
-      cover: image().optional(),
       url: z.url().optional(),
       repo: z.url().optional(),
       featured: z.boolean().default(false),
-      draft: z.boolean().default(false),
     }),
 });
 

@@ -2,13 +2,4 @@
 // and SEO defaults all read from here instead of hardcoding copy.
 export const SITE = {
   name: "Portfolio of souk4711",
-  description:
-    "Portfolio of souk4711 — an old-school software developer in the AI era, with an emphasis on speed, clarity, and the details.",
-  social: [{ label: "GitHub", href: "https://github.com/souk4711" }],
-  locale: "en",
 } as const;
-
-export const NAV_LINKS = [
-  { label: "Work", href: "/work" },
-  { label: "About", href: "/about" },
-] as const;
