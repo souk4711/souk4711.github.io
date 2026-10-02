@@ -6,7 +6,7 @@ import Button from '@/components/Button.astro';
 export async function getStaticPaths() {
   const entries = await getCollection('work', ({ data }) => !data.draft);
   return entries.map((entry) => ({
-    params: { id: entry.id },
+    params: { id: entry.id.replace(/^\d+-/, "") },
     props: { entry },
   }));
 }

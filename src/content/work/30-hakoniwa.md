@@ -1,7 +1,6 @@
 ---
 title: Hakoniwa
 summary: Process isolation for Linux using namespaces, resource limits, cgroups, landlock and seccomp.
-date: 2025-06-20
 repo: https://github.com/souk4711/hakoniwa
 featured: true
 ---

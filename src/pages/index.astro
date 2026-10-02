@@ -7,8 +7,7 @@ import WorkRow from '@/components/WorkRow.astro';
 import { SITE } from '@/site.config';
 
 const allWork = await getCollection('work');
-const sorted = [...allWork].sort((a, b) => true);
-const featured = sorted.filter((entry) => entry.data.featured);
+const featured = allWork.filter((entry) => entry.data.featured);
 ---
 
 <Layout title={SITE.name}>

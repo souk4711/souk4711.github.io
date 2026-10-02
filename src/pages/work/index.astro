@@ -4,9 +4,7 @@ import Layout from '@/layouts/Layout.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
 import WorkRow from '@/components/WorkRow.astro';
 
-const allWork = (await getCollection('work')).sort(
-  (a, b) => true
-);
+const allWork = (await getCollection('work'));
 ---
 
 <Layout title="Work">
